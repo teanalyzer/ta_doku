@@ -1,5 +1,5 @@
 {
-  "index": "Introduction",
+  "index": "Einleitung",
   "another": "Another Page",
   "advanced": "Advanced (A Folder)",
   "about": {
@@ -7,9 +7,9 @@
     "type": "page"
   },
   "contact": {
-    "title": "Contact ↗",
+    "title": "Zum Template Analyzer",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://contentintegrationservices.de/",
     "newWindow": true
   }
 }
