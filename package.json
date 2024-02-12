@@ -18,11 +18,15 @@
   },
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
+    "highcharts": "^11.3.0",
+    "highcharts-gantt": "^0.1.7",
+    "highcharts-react-official": "^3.2.1",
     "next": "^13.0.6",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "recharts": "^2.12.0"
   },
   "devDependencies": {
     "@types/node": "18.11.10",

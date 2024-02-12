@@ -1,7 +1,7 @@
 {
   "index": "Einleitung",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "roadmap": "Roadmap",
+  "advanced": "Bsp. mit Dropdown",
   "about": {
     "title": "About",
     "type": "page"
