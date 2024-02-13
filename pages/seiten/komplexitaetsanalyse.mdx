@@ -1,0 +1,31 @@
+# Komplexitätsanalyse
+
+## Überblick
+
+Die Komplexitätsanalyse ist eine zentrale Komponente des Template Analyzers, welche die Endnutzer bei der Einschätzung der Struktur, des Umfangs und schließlich der Komplexitätseinschätzung von M/TEXT Classic Projekten unterstützt. Dieser Prozess bietet eine detaillierte Sicht auf die individuelle und kumulative Komplexität von Vorlagen und Bausteinen, die sowohl für die direkte Analyse als auch für die Migrationsplanung von entscheidender Bedeutung ist.
+
+## Technischer Hintergrund
+Die Komplexität wird auf der Basis verschiedener messbarer Faktoren berechnet, die in der Entwicklungsumgebung des Template Analyzers definiert sind. Durch den Einsatz von React Hooks wie useState, useEffect und useContext wird ein reaktiver Zustand innerhalb der Komponenten VorlagenKomplex und BausteineKomplex gehandhabt, der eine dynamische Anpassung und sofortiges Feedback bei der Manipulation von Gewichtungsfaktoren ermöglicht. Die Hauptanwendung lädt die erforderlichen Daten asynchron über eine API und verarbeitet diese in Echtzeit, um die Komplexitätsbewertungen darzustellen.
+
+## Funktionale Beschreibung
+
+### Gewichtungsfaktoren
+Gewichtungsfaktoren sind ein wesentlicher Bestandteil der Komplexitätsanalyse. Sie ermöglichen es dem Benutzer, die Bedeutung verschiedener Objekttypen wie Variablen, Tabellen, Textbausteine und logische Konstrukte individuell zu skalieren. Die Anpassung dieser Faktoren beeinflusst die Gesamtkomplexität der Vorlagen und Bausteine, was eine nuancierte Einsicht in die Projektstruktur bietet.
+
+### Vorlagenkomplexität
+Die Vorlagenkomplexität wird sowohl durch die inhärente Komplexität der Vorlage selbst als auch durch die in ihr referenzierten Bausteine bestimmt. Dieser zweistufige Ansatz stellt sicher, dass sowohl direkte als auch indirekte Komplexitäten in die Gesamtbewertung einfließen.
+
+### Bausteinkomplexität
+Die Bausteinkomplexität berücksichtigt einzelne Elemente wie lokale und globale Variablen, die Anzahl der Tabellen, Referenzen auf andere Bausteine und die Verwendung von Logikstrukturen. Die Komplexität eines Bausteins wird als Summe dieser Elemente, multipliziert mit ihren jeweiligen Gewichtungsfaktoren, berechnet.
+
+### Statistische Auswertungen
+Um fundierte Entscheidungen über die Festlegung der Gewichtungsfaktoren und Komplexitätsintervalle treffen zu können, bietet der Template Analyzer statistische Auswertungen wie Durchschnitt, Median und Standardabweichung. Diese Statistiken helfen bei der Bestimmung der Verteilung der Komplexität innerhalb des Projektes und unterstützen den Benutzer dabei, eine ausgewogene und datengestützte Konfiguration zu erreichen.
+
+### Interaktive Benutzeroberfläche
+Die Benutzeroberfläche bietet interaktive Elemente, um die Gewichtungsfaktoren anzupassen und die Komplexitätsintervalle zu definieren. Darüber hinaus ermöglicht die Integration von Grafiken eine visuelle Darstellung der Komplexitätsverteilung, die es dem Benutzer erleichtert, die Daten zu interpretieren und entsprechende Maßnahmen zu ergreifen.
+
+### Integration und Feedback
+Jede Änderung der Gewichtungsfaktoren oder der Komplexitätsintervalle wird unmittelbar auf die Template-Landkarte übertragen und aktualisiert dort die Komplexitätseinstufungen der Vorlagen und Bausteine. Dies gewährleistet eine konsistente und transparente Bewertung über das gesamte Tool hinweg.
+
+### Zusammenfassung
+Die Komplexitätsanalyse des Template Analyzers ist ein umfassendes Werkzeug, das eine tiefgreifende Untersuchung und Bewertung von M/TEXT Classic Projekten ermöglicht. Durch die Kombination von benutzerdefinierbaren Gewichtungsfaktoren, interaktiven Benutzeroberflächen und aussagekräftigen statistischen Daten können Nutzer eine genaue Komplexitätsbewertung vornehmen und somit die Qualität des Endresultats durch weniger Vermutungen und mehr Fakten zu steigern.

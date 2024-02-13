@@ -1,4 +1,8 @@
 {
     "startseite": "Startseite",
-    "neueanalyse": "Neue Analyse"
+    "neueanalyse": "Neue Analyse",
+    "befehlszaehler": "Befehlszähler",
+    "redundanzanalyse": "Redundanzanalyse",
+    "templatelandkarte": "Template Landkarte",
+    "komplexitaetsanalyse": "Komplexitätsanalyse"
   }
