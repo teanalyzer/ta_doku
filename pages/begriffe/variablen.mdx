@@ -1,0 +1,23 @@
+## Allgemeine Beschreibung
+In der Softwareentwicklung sind Variablen grundlegende Bausteine, die zur Speicherung von Daten verwendet werden. Sie sind essentiell für die Konstruktion von dynamischen und funktionalen Programmen – im Fall von M/Text Classic also dynamischen Dokumenten. Im Kontext des Template Analyzers gibt die Analyse der Variablen Aufschluss über Verwendungshäufigkeit von Variablen innerhalb eines M/TEXT Classic Projekts. Die Unterscheidung zwischen lokalen und globalen Variablen erlaubt eine tiefere Einsicht in die Architektur und Komplexität des Codes.
+
+### Lokale Variablen 
+Lokale Variablen sind nur innerhalb des Bausteins bzw. der Vorlage verfügbar, in dem/der sie deklariert wurden. Ihre Verwendung beschränkt sich auf den Baustein bzw. die Vorlage, für den/die sie erstellt wurden, was bedeutet, dass sie nach außen hin nicht sichtbar sind. Dies fördert die Modularität und verhindert unbeabsichtigte Interferenzen im Programmablauf.
+
+### Globale Variablen 
+Globale Variablen hingegen sind im gesamten Projekt zugänglich und können von jeder Vorlage bzw. jedem Baustein innerhalb des Projekts gelesen oder modifiziert werden. Während sie die Datenübertragung zwischen verschiedenen Teilen eines Programms erleichtern, können sie auch zu unerwartetem Verhalten führen, wenn sie unsachgemäß verwendet werden.
+
+## Technische Umsetzung der Variablenzählung
+Die Analyse der Variablen im Template Analyzer beginnt mit dem Hochladen der Projektdateien im ZIP-Format. Nach der Entpackung der Dateien wird der Inhalt jeder Datei durchsucht, um Variablen zu identifizieren und zu zählen.
+
+### Zählung der Variablen
+Die Zählung der Variablen wird durch reguläre Ausdrücke, auch als „regex“ bekannt, realisiert. Für lokale Variablen wird ein Muster gesucht, das typischerweise aus einem Stern (*) gefolgt von zwei Ziffern besteht, um die lokale Konvention zu treffen. Globale Variablen werden durch ein etwas komplexeres Muster erfasst, das auf einem Stern gefolgt von einem Mix aus Buchstaben, Zahlen, Unterstrichen oder Bindestrichen basiert. Die erkannten Variablen werden in zwei Kategorien gezählt: lokale und globale Variablen.
+
+### Technischer Prozess
+Ein serverseitiges Skript führt den Zählvorgang aus und speichert die Ergebnisse in einer NoSQL-Datenbank (MongoDB), wobei für jede gefundene Variable ein Eintrag erstellt wird. Dies umfasst die Anzahl der lokalen und globalen Variablen sowie deren Namen, was eine spätere Referenzierung und Analyse ermöglicht.
+
+## Darstellung und Nutzung in der Template-Landkarte
+Innerhalb der Template-Landkarte werden die Ergebnisse der Variablenanalyse genutzt, um die Komplexität jeder Vorlage und jedes Bausteins zu berechnen und visuell darzustellen. Lokale Variablen werden dabei separat von globalen Variablen betrachtet, um den Migrationsaufwand bei Bedarf differenzierter betrachten zu können.
+
+## Einfluss auf die Komplexitätsanalyse
+In der Komplexitätsanalyse werden die gezählten Variablen zu einem Gesamtbild zusammengeführt. Hierbei wird die Gesamtzahl der Variablen als ein Faktor in die Berechnung der Komplexitätsmetriken eingebracht. Dies spiegelt die Bedeutung der Datenverwaltung und -manipulation innerhalb des Projekts wider und trägt dazu bei, die Notwendigkeit von Ressourcen für die Migration und/oder Weiterentwicklung zu ermitteln.

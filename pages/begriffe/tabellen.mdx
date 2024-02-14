@@ -1,0 +1,20 @@
+## Allgemeine Beschreibung
+Tabellen sind in der Entwicklung von M/TEXT Classic Projekten ein zentrales Element, da sie zur Strukturierung und Verwaltung komplexer Datensätze verwendet werden. Sie ermöglichen es Entwicklern, Daten effizient zu organisieren, zu speichern und abzufragen. Im Rahmen der Tabellenanalyse des Template Analyzers werden die Verwendung und das Vorkommen von Tabellen innerhalb der Projektdateien untersucht, um einen Einblick in die Datenarchitektur und die damit verbundene Komplexität der Bausteine und Vorlagen zu geben.
+
+## Technische Umsetzung der Tabellenzählung
+Die Tabellenzählung erfolgt automatisiert durch eine serverseitige API-Route, die nach spezifischen Mustern in den Projektdateien sucht, um Tabellendefinitionen zu identifizieren.
+
+### Identifizierung von Tabellen
+Der Prozess nutzt genau wie bei den Variablen reguläre Ausdrücke, um die Instanzen der Tabellendefinitionen zu erkennen. Dabei wird ein Muster verwendet, das die .TABLE-Anweisung identifiziert, welche den Beginn einer Tabellendefinition markiert, und ignoriert dabei die entsprechenden .TABLE end-Anweisungen, die das Ende der Definitionen kennzeichnen.
+
+### Zählung der Tabellen
+Das Skript zählt jede gefundene Instanz einer Tabellendefinition und fasst die Gesamtzahl zusammen. Die Resultate werden sowohl für Bausteine als auch für Vorlagen ermittelt und separat gespeichert.
+
+## Darstellung und Nutzung in der Template-Landkarte und Komplexitätsanalyse
+
+In der Template-Landkarte werden die erfassten Tabellen als Teil der strukturellen Darstellung eines Projekts visualisiert. Dies ermöglicht es den Nutzern, die Komplexität auf einer detaillierten Ebene zu beurteilen und zu verstehen, wie die Verwendung von Tabellen die Gesamtarchitektur des Projekts beeinflusst.
+
+In der Komplexitätsanalyse fließen die gezählten Tabellen ebenfalls in die Bewertung der Vorlagen- und Bausteinekomplexität ein. Die Anzahl der Tabellen trägt zur Ermittlung des Komplexitätsgrades bei, da eine höhere Anzahl von Tabellen typischerweise auf ein komplexeres Datenmanagement hinweist.
+
+## Prozess und Ergebnisse
+Die Ausführung der Tabellenanalyse erfolgt nach dem Hochladen und Entpacken der Projektdateien. Die Ergebnisse der Tabellenzählung werden in der NoSQL-Datenbank gespeichert und stehen für die weitere Auswertung zur Verfügung. 
