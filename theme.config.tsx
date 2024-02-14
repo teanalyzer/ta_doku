@@ -42,7 +42,16 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    text: 'powered by CIS',
+    text: (<div style={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: '5px', 
+    }}>
+      Powered by <img src="/cis_logo.png" alt="cis logo" width="20" /> | ©{' '} {new Date().getFullYear()} 
+      
+    </div>
+    )
   },
 }
 
