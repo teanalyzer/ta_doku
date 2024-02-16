@@ -3,14 +3,9 @@
   "hauptfunktionen": "Hauptfunktionen",
   "begriffe": "Begrifflichkeiten",
   "seiten": "Menüstruktur",
-
   "roadmap": "Roadmap",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
   "contact": {
-    "title": "Zum Template Analyzer",
+    "title": "Template Analyzer ›",
     "type": "page",
     "href": "https://contentintegrationservices.de/",
     "newWindow": true

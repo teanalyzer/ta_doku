@@ -12,6 +12,7 @@ fontWeight: "bold"
 };
 
 const config: DocsThemeConfig = {
+  // logo
   logo: <div style={divStyle}><svg
   width="34"
   height="42"
@@ -34,13 +35,27 @@ const config: DocsThemeConfig = {
 </svg>
 <p>Dokumentation</p>
 </div>,
+// projekt
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/teanalyzer/TA',
   },
-  chat: {
-    link: 'https://discord.com',
+  // search
+  search:{
+    placeholder: "Dokumentation durchsuchen"
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  // toc
+  toc:{
+    title: "Auf dieser Seite"
+  },
+  // editLink
+  editLink:{
+    component: null
+  },
+  // feedback
+  feedback:{
+    content: null
+  },
+  // footer
   footer: {
     text: (<div style={{
       display: 'flex',
