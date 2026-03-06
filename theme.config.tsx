@@ -61,10 +61,8 @@ const config: DocsThemeConfig = {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      gap: '5px', 
     }}>
-      Powered by <img src="/cis_logo.png" alt="cis logo" width="20" /> | ©{' '} {new Date().getFullYear()} 
-      
+      © {new Date().getFullYear()}
     </div>
     )
   },
